@@ -1,0 +1,82 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\froman\fcharset0 Times-Roman;
+}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid1\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid101\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid201\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid301\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid401\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid501\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Project-1 Twitter Sentiment Analysis\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f1\fs26 \cf2 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Software that needs to be installed (if any) with download and installation instructions.\
+\pard\tx720\pardeftab720
+\cf2 \'97>    I am making use of \'93ntwitter\'94 API of node.js for capturing data stream of twitter. So to 	install it globally in the system use the following command::\
+>> npm install -g ntwitter \
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Environment variable settings (if any).\
+\pard\tx720\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'97>     For accessing twitter stream through API we need for keys, consumer key, consumer secret, access token and access secret. So all these 4 need to be stored in the environment variable. The command and the name of these variables are as follows:\
+>
+\f2 \cf0 \expnd0\expndtw0\kerning0
+export TWITTER_CONSUMER_KEY=your_key_from_twitter\
+\pard\pardeftab720
+\cf0 >export TWITTER_CONSUMER_SECRET=your_secret_from_twitter
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx720\pardeftab720
+\cf2 >export TWITTER_ACCESS_TOKEN= your_access_token_from_twitter\
+>export TWITTER_ACCESS_SECRET= your_access_secret_from_twitter\
+>source ~/.bashrc\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Instructions on how to run the program.\
+\pard\tx720\pardeftab720
+\cf2 \'97> to run the program enter into the directory of project\
+> cd mschheda_proj1/\
+ Now start running the server\
+> node app.js\
+Once the server is started it will start accepting tweets when it is connected to the client. To do that go to browser and enter http://127.0.0.1:3000 .\
+Once client is connected twitter stream gets downloaded and results are calculated.\
+\
+Note:\
+Refresh the page in browser in case if tweets are not displayed or no results are displayed.\
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Instructions on how to interpret the results.\
+\pard\tx720\pardeftab720
+\cf2 \'97> As required the stats are displayed at the top including Actual count of tweets and % of love and hate tweets.\
+\
+There are two columns of tweets: 1. The leftmost stands for \'93love\'94 tweets and \
+					    2. Rightmost are for \'93hate\'94 tweets.\
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls5\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Sample input and output files (if applicable).\
+\pard\tx720\pardeftab720
+\cf2 \'97> Not required\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls6\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+References to any software you may have used (if applicable).\
+\pard\tx720\pardeftab720
+\cf2 \'97> Here are the links used to study about ntwitter , \
+1. http://www.i-avington.com/Posts/Post/using-nodejs-and-socketio-to-stream-tweets-from-the-twitter-api\
+2. https://github.com/AvianFlu/ntwitter\
+}
